@@ -1,0 +1,10 @@
+@import "./global.scss";
+
+.components {
+  position: relative;
+  top: calc(#{$navbar-height});
+
+  > * {
+    height: calc(100vh - 3 * #{$navbar-height});
+  }
+}

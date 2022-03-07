@@ -1,0 +1,10 @@
+@import "../global.scss";
+
+.projects {
+  .projects-anchor {
+    position: relative;
+    top: -#{$navbar-height};
+  }
+
+  background-color: lightyellow;
+}
