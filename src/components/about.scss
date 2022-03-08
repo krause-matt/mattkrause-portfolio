@@ -2,10 +2,6 @@
 
 .about {
   background-color: orangered;
-  .about-anchor {
-    position: relative;
-    top: -#{$navbar-height};
-  }
 
   .container {
     position: absolute;

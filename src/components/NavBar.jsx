@@ -6,16 +6,16 @@ export default function NavBar() {
       <div className="container">
         <ul className="links">
           <li>
-            <a href="#about-anchor">about</a>
+            <a href="#about">about</a>
           </li>
           <li>
-            <a href="#skills-anchor">skills</a>
+            <a href="#skills">skills</a>
           </li>
           <li>
-            <a href="#projects-anchor">projects</a>
+            <a href="#projects">projects</a>
           </li>
           <li>
-            <a href="#about-anchor">resume</a>
+            <a href="#about">resume</a>
           </li>
           <li>
             <a href="#contact">contact</a>
