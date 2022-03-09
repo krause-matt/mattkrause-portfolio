@@ -1,12 +1,35 @@
 import "./projects.scss";
 import { useState, useEffect } from "react";
-import { ballparkRater } from "../images";
+import { ballparkRater, gardenPlotter } from "../images";
 
 export default function Projects() {
+  const ballpark = {
+    title: "Ballpark Rater",
+    subtitle: "Baseball field locating and rating app",
+    description: "express & mongo",
+    image: ballparkRater[0],
+  };
+  const garden = {
+    title: "Garden Plotter",
+    subtitle: "Gardening social site",
+    description: "react and redux",
+    image: gardenPlotter[0],
+  };
+
   const [currentProject, setCurrentProject] = useState("ballpark");
+  const [projectDetails, setProjectDetails] = useState(ballpark);
 
   useEffect(() => {
-    console.log("use effect");
+    switch (currentProject) {
+      case "ballpark":
+        setProjectDetails(ballpark);
+        break;
+      case "garden":
+        setProjectDetails(garden);
+        break;
+      default:
+        setProjectDetails(ballpark);
+    }
   }, [currentProject]);
 
   const projectInfo = [
@@ -37,13 +60,17 @@ export default function Projects() {
         </div>
         <div className="display">
           <div className="images">
-            <img src={ballparkRater[0]} />
+            <img src={projectDetails.image} />
             <div className="buttons">
               <button>App</button>
               <button>Code</button>
             </div>
           </div>
-          <div className="description"></div>
+          <div className="description">
+            <h1>{projectDetails.title}</h1>
+            <h3>{projectDetails.subtitle}</h3>
+            <p>{projectDetails.description}</p>
+          </div>
         </div>
       </div>
     </div>
