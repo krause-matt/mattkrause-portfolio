@@ -1,21 +1,77 @@
 @import "../global.scss";
 
 .skills {
-  background-color: lightblue;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 
-  .icon-block {
-    height: 10rem;
-    width: 10rem;
-    margin: 2rem;
+  .icons {
+    height: 100%;
+    width: 70%;
+    background-color: lightblue;
+    display: flex;
+    //flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
 
-    i {
-      color: black;
-      font-size: 10rem;
+    .icon-block {
+      height: 10rem;
+      width: 30rem;
+      margin: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &.active {
+        border: 1px solid black;
+      }
+
+      i {
+        color: black;
+        font-size: 8rem;
+
+        &.active {
+          color: white;
+        }
+      }
+
+      p {
+        font-family: "Secular One", sans-serif;
+        font-size: 2.5rem;
+        margin-left: 3rem;
+
+        &.active {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .details {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .terminal {
+      height: 60%;
+      width: 80%;
+      background-color: rgb(51, 51, 51);
+      padding: 1rem;
+      border-radius: 5%;
+
+      p {
+        font-family: "Press Start 2P", cursive;
+        font-size: 1.5rem;
+        color: white;
+      }
     }
   }
 }
