@@ -1,5 +1,5 @@
 import "./skills.scss";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Skills() {
   const devicons = [
@@ -19,7 +19,20 @@ export default function Skills() {
     { icon: "devicon-sass-original", skill: "Sass" },
   ];
 
+  const bootstrap = "version 4 and 5!";
+
   const [currentSkill, setCurrentSkill] = useState(null);
+  const [skillDetails, setSkillDetails] = useState(null);
+
+  useEffect(() => {
+    switch (skillDetails) {
+      case "bootstrap":
+        setSkillDetails(bootstrap);
+        break;
+      default:
+        setSkillDetails("test");
+    }
+  }, [currentSkill]);
 
   return (
     <div className="skills" id="skills">
@@ -32,7 +45,10 @@ export default function Skills() {
                   ? "icon-block active"
                   : "icon-block"
               }
-              onClick={() => setCurrentSkill(object.skill)}
+              onClick={() => {
+                setCurrentSkill(object.skill);
+                setSkillDetails(object.skill.toLowerCase());
+              }}
             >
               <i
                 className={
@@ -51,7 +67,14 @@ export default function Skills() {
 
       <div className="details">
         <div className="terminal">
-          <p>test</p>
+          <p>
+            {skillDetails}
+            <div
+              className={skillDetails === "test" ? "cursor active" : "cursor"}
+            >
+              |
+            </div>
+          </p>
         </div>
       </div>
     </div>
