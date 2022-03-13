@@ -79,3 +79,4 @@ $gradient-radial: radial-gradient(
 );
 
 $navbar-height: 8rem;
+$component-height: calc(100vh - 3 * #{$navbar-height});

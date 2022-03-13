@@ -5,6 +5,6 @@
   top: calc(#{$navbar-height});
 
   > * {
-    height: calc(100vh - 3 * #{$navbar-height});
+    height: $component-height;
   }
 }
