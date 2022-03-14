@@ -20,7 +20,8 @@
         align-items: center;
 
         li {
-          width: 30%;
+          width: 20rem;
+          height: 4rem;
           padding: 1rem;
           margin: 2rem;
           list-style: none;
@@ -45,7 +46,7 @@
           &.active {
             color: $platinum;
             background-color: $black-coral;
-            border-radius: 10%;
+            border-radius: 10% / 50%;
           }
         }
       }
@@ -79,7 +80,19 @@
             width: 10rem;
             font-family: "Secular One", sans-serif;
             font-size: 2rem;
-            //border-radius: 25% / 50%;
+            background-color: $cerulean-frost;
+            color: $platinum;
+            border: 1px solid $black-coral;
+            cursor: pointer;
+
+            &:hover {
+              background-color: $pale-cerulean;
+              color: $black-coral;
+            }
+
+            &:active {
+              transform: translateY(0.2rem);
+            }
           }
         }
       }

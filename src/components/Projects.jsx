@@ -36,7 +36,7 @@ export default function Projects() {
     { id: "ballpark", title: "Ballpark Rater" },
     { id: "garden", title: "Garden Plotter" },
     { id: "pizza", title: "Pizza Place" },
-    { id: "senate", title: "Senate Vote Compare" },
+    { id: "senate", title: "Senate Vote Comparator" },
     { id: "fit", title: "FITtrain" },
   ];
 

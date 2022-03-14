@@ -1,9 +1,26 @@
 import "./contact.scss";
-import { useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Modal from "./Modal";
 
 export default function Contact() {
+  const [modal, setModal] = useState(false);
+
+  const handleClick = (e) => {
+    const clickedId = e.target.id;
+
+    if (modal && clickedId != "modal-popup" && clickedId != "modal-message") {
+      setModal(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleClick);
+    return () => {
+      document.removeEventListener("click", handleClick);
+    };
+  });
+
   const contactForm = useRef();
 
   const formSubmit = (e) => {
@@ -32,11 +49,13 @@ export default function Contact() {
     nameInput.value = "";
     emailInput.value = "";
     messageInput.value = "";
+
+    setModal(true);
   };
 
   return (
     <div className="contact" id="contact">
-      <Modal />
+      <Modal modal={modal} setModal={setModal} />
       <form ref={contactForm} className="contact-form" onSubmit={formSubmit}>
         <div className="form-element">
           <label for="name">Name</label>
