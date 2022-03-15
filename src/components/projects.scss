@@ -44,8 +44,8 @@
           // }
 
           &.active {
-            color: $platinum;
-            background-color: $black-coral;
+            color: white;
+            background-color: $cerulean-frost;
             border-radius: 10% / 50%;
           }
         }
@@ -80,14 +80,15 @@
             width: 10rem;
             font-family: "Secular One", sans-serif;
             font-size: 2rem;
-            background-color: $cerulean-frost;
+            background-color: $charcoal;
             color: $platinum;
-            border: 1px solid $black-coral;
+
             cursor: pointer;
 
             &:hover {
               background-color: $pale-cerulean;
               color: $black-coral;
+              border: 1px solid $black-coral;
             }
 
             &:active {

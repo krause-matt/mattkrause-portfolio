@@ -26,7 +26,7 @@
       label {
         display: flex;
         flex-direction: column;
-        justify-content: end;
+        justify-content: flex-end;
       }
 
       label,
@@ -73,7 +73,9 @@
         cursor: pointer;
 
         &:hover {
-          background-color: $black-coral;
+          background-color: $pale-cerulean;
+          color: $black-coral;
+          border: 1px solid $black-coral;
         }
 
         &:active {

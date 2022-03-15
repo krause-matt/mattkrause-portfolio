@@ -1,7 +1,6 @@
 @import "../global.scss";
 
 .about {
-  background-color: orangered;
   height: 100%;
   position: relative;
 
@@ -9,5 +8,26 @@
     position: absolute;
     height: 100%;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orangered;
+
+    .left {
+      height: 75%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "GilamBold", sans-serif;
+      font-size: 10rem;
+      border-right: 0.5rem groove $black-coral;
+      color: $charcoal;
+    }
+
+    .right {
+      height: 100%;
+      width: 100%;
+    }
   }
 }

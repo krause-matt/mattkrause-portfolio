@@ -80,3 +80,27 @@ $gradient-radial: radial-gradient(
 
 $navbar-height: 8rem;
 $component-height: calc(100vh - 3 * #{$navbar-height});
+
+@font-face {
+  font-family: "Circus";
+  src: url("../public/fonts/TheCircous.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "CircusStriped";
+  src: url("../public/fonts/TheCircousStriped.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "GilamBold";
+  src: url("../public/fonts/Gilam-Trial-Bold.otf") format("opentype"),
+    url("../public/fonts/Gilam-Trial-Bold.ttf") format("truetype"),
+    url("../public/fonts/Gilam-Trial-Bold.woff") format("woff"),
+    url("../public/fonts/Gilam-Trial-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
