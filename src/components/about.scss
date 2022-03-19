@@ -23,33 +23,39 @@
       border-right: 0.5rem groove $black-coral;
 
       .name,
-      .engineer {
+      .frame {
         font-family: "GilamBold", sans-serif;
         font-size: 10rem;
         color: $charcoal;
       }
 
-      .engineer {
-        font-size: 8rem;
-        position: relative;
-        backface-visibility: hidden;
+      .frame {
+        height: 5rem;
+        overflow: hidden;
+        font-size: 5rem;
+        display: flex;
 
-        &:hover {
-          transform: rotateY(-180deg);
-          transition: all 3s ease;
+        .subframe-1 {
+          height: 100%;
+          animation: shift-fast 10s ease infinite alternate;
+
+          > * {
+            height: 100%;
+            display: flex;
+            align-items: center;
+          }
         }
 
-        &:hover + .developer {
-          transform: rotateY(0deg);
-          transition: all 3s ease;
-        }
-      }
+        .subframe-2 {
+          height: 100%;
+          animation: shift-med 10s ease infinite alternate;
 
-      .developer {
-        position: absolute;
-        font-size: 8rem;
-        backface-visibility: hidden;
-        transform: rotateY(180deg);
+          > * {
+            height: 100%;
+            display: flex;
+            align-items: center;
+          }
+        }
       }
     }
 
@@ -60,30 +66,38 @@
   }
 }
 
-@keyframes title-twist-front {
+@keyframes shift-fast {
   0% {
-    transform: rotateY(0deg);
+    transform: translateY(0rem);
   }
 
-  50% {
-    transform: rotateY(180deg);
+  45% {
+    transform: translateY(0rem);
+  }
+
+  55% {
+    transform: translateY(-5rem);
   }
 
   100% {
-    transform: rotateY(360deg);
+    transform: translateY(-5rem);
   }
 }
 
-@keyframes title-twist-back {
+@keyframes shift-med {
   0% {
-    transform: rotateY(360deg);
+    transform: translateY(0rem);
   }
 
-  50% {
-    transform: rotateY(180deg);
+  40% {
+    transform: translateY(0rem);
+  }
+
+  60% {
+    transform: translateY(-5rem);
   }
 
   100% {
-    transform: rotateY(0deg);
+    transform: translateY(-5rem);
   }
 }
