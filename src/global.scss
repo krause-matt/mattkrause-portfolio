@@ -104,3 +104,23 @@ $component-height: calc(100vh - 3 * #{$navbar-height});
   font-style: normal;
   font-weight: normal;
 }
+
+@font-face {
+  font-family: "CodeProNormal";
+  src: url("../public/fonts/CodePro-Trial-Normal.otf") format("opentype"),
+    url("../public/fonts/CodePro-Trial-Normal.ttf") format("truetype"),
+    url("../public/fonts/CodePro-Trial-Normal.woff") format("woff"),
+    url("../public/fonts/CodePro-Trial-Normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "CodeProBold";
+  src: url("../public/fonts/CodePro-Trial-Bold.otf") format("opentype"),
+    url("../public/fonts/CodePro-Trial-Bold.ttf") format("truetype"),
+    url("../public/fonts/CodePro-Trial-Bold.woff") format("woff"),
+    url("../public/fonts/CodePro-Trial-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}

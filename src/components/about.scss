@@ -14,7 +14,7 @@
     background-color: orangered;
 
     .left {
-      height: 75%;
+      height: 80%;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -24,7 +24,8 @@
 
       .name,
       .frame {
-        font-family: "GilamBold", sans-serif;
+        // font-family: "GilamBold", sans-serif;
+        font-weight: 900;
         font-size: 10rem;
         color: $charcoal;
       }
@@ -34,34 +35,132 @@
         overflow: hidden;
         font-size: 5rem;
         display: flex;
+        align-items: center;
+        justify-content: center;
 
-        .subframe-1 {
+        .subframe-1,
+        .subframe-5 {
           height: 100%;
-          animation: shift-fast 10s ease infinite alternate;
+          animation: shift-fast 5s ease infinite alternate;
 
           > * {
             height: 100%;
+            width: 6.25rem;
             display: flex;
             align-items: center;
+            justify-content: center;
           }
         }
 
-        .subframe-2 {
+        .subframe-3,
+        .subframe-6 {
           height: 100%;
-          animation: shift-med 10s ease infinite alternate;
+          animation: shift-med 5s ease infinite alternate;
 
           > * {
             height: 100%;
+            width: 6.25rem;
             display: flex;
             align-items: center;
+            justify-content: center;
+          }
+        }
+
+        .subframe-4,
+        .subframe-7 {
+          height: 100%;
+          animation: shift-slow 5s ease infinite alternate;
+
+          > * {
+            height: 100%;
+            width: 6.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+
+        .subframe-2,
+        .subframe-8,
+        .subframe-9 {
+          height: 100%;
+
+          > * {
+            height: 100%;
+            width: 6.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
           }
         }
       }
     }
 
     .right {
-      height: 100%;
+      height: 85%;
       width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: $charcoal;
+
+      .aboutme {
+        font-size: 7rem;
+        font-weight: 600;
+        letter-spacing: -0.7rem;
+      }
+
+      div[class^="section-"] {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 10rem;
+
+        .left-heading {
+          height: 100%;
+          font-size: 2.5rem;
+          font-family: "GilamBold", sans-serif;
+          letter-spacing: 1rem;
+          margin: 0 2rem;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          flex: 1;
+        }
+
+        .right-detail {
+          height: 100%;
+          width: 80%;
+          font-size: 2rem;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          flex: 5;
+          position: relative;
+
+          .samsung,
+          .amazon,
+          .lg {
+            position: absolute;
+            color: $black-coral;
+          }
+
+          .samsung {
+            top: 4rem;
+            left: -4.5rem;
+          }
+
+          .amazon {
+            top: 8.4rem;
+            left: 15rem;
+          }
+          .lg {
+            top: 6.4rem;
+            left: 22rem;
+          }
+        }
+      }
     }
   }
 }
@@ -71,11 +170,11 @@
     transform: translateY(0rem);
   }
 
-  45% {
+  35% {
     transform: translateY(0rem);
   }
 
-  55% {
+  65% {
     transform: translateY(-5rem);
   }
 
@@ -89,11 +188,29 @@
     transform: translateY(0rem);
   }
 
-  40% {
+  30% {
     transform: translateY(0rem);
   }
 
-  60% {
+  70% {
+    transform: translateY(-5rem);
+  }
+
+  100% {
+    transform: translateY(-5rem);
+  }
+}
+
+@keyframes shift-slow {
+  0% {
+    transform: translateY(0rem);
+  }
+
+  25% {
+    transform: translateY(0rem);
+  }
+
+  75% {
     transform: translateY(-5rem);
   }
 

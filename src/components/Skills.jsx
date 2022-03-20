@@ -30,7 +30,7 @@ export default function Skills() {
         setSkillDetails(bootstrap);
         break;
       default:
-        setSkillDetails("test");
+        setSkillDetails("Click a skill to see more!");
     }
   }, [currentSkill]);
 
@@ -70,7 +70,11 @@ export default function Skills() {
           <p>
             {skillDetails}
             <div
-              className={skillDetails === "test" ? "cursor active" : "cursor"}
+              className={
+                skillDetails === "Click a skill to see more!"
+                  ? "cursor active"
+                  : "cursor"
+              }
             >
               |
             </div>

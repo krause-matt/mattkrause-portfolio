@@ -39,3 +39,7 @@ export const tableGrab = [
   "/project_images/table-grab/right.JPG",
   "/project_images/table-grab/lower.JPG",
 ];
+
+export const samsung = "/project_images/svgs/samsung.svg";
+export const amazon = "/project_images/svgs/amazon.svg";
+export const lg = "/project_images/svgs/lg.svg";
