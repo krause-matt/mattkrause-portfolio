@@ -20,24 +20,30 @@ export default function Skills() {
   ];
 
   const skillDesc = {
-    bootstrap: "I've used v4/v5 to create attractive and responsive sites.",
-    css: "My projects have been enhanced with media queries, flexbox/grid, and animations.",
+    bootstrap:
+      "I've used Bootstrap v4 and v5 to create attractive and responsive sites.",
+    css: "My projects have been enhanced with CSS media queries, flexbox/grid, and animations.",
     express:
-      "I used express as a REST API server for my Ballpark Rater CRUD app: Check it out.",
+      "I used Express as a REST API server for my Ballpark Rater CRUD app: Check it out.",
     firebase:
-      "I taught myself how to utilize when setting up an orders database for my React Pizza Store app: Check it out.",
-    git: "I utilize for version control, documentation, and establishing remotes on all of my apps.",
+      "I taught myself how to utilize Google Firebase when setting up an orders database for my React Pizza Store app: Check it out.",
+    git: "I utilize Git for version control, documentation, and establishing remotes on all of my apps.",
     github:
-      "I've been contributing my code almost daily since learning the basics in Oct. 2021. Visit my GitHub.",
+      "I've been contributing my code to GitHub almost daily since learning the basics in Oct. 2021. Visit my GitHub.",
     html: "I am currently working to improve my use of proper semantics and learn more attributes.",
     javascript:
       "I have completed two JavaScript courses totaling over 40 hours, and have registerd for an advanced topics course as well. JavaScript is used in all of my projects.",
     mongodb:
       "Mongo is the DB for my Ballpark Rater CRUD app which uses three schemas: Check it out.",
     nodejs:
-      "I use node to run JavaScript and npm to add necessary libraries and frameworks to my projects.",
+      "I use node to run JavaScript code and npm to add necessary libraries and frameworks to my projects.",
     python:
       "I use Python at work for data analysis/visualization projects. Not used explicitly for web development, but I feel it enhances my overall coding skill.",
+    react:
+      "Three projects listed below (plus the site you're on right now!) were built to be interactive and seamless using React state management and Hooks.",
+    redux:
+      "My Garden Plotter app (check it out) has a larger component and state system which allowed me to learn and deploy Redux.",
+    sass: "I enjoy taking advantage of Sass nesting and global variables to make styling easier.",
   };
 
   const [currentSkill, setCurrentSkill] = useState(null);
@@ -77,6 +83,15 @@ export default function Skills() {
         break;
       case "python":
         setSkillDetails(skillDesc.python);
+        break;
+      case "react":
+        setSkillDetails(skillDesc.react);
+        break;
+      case "redux":
+        setSkillDetails(skillDesc.redux);
+        break;
+      case "sass":
+        setSkillDetails(skillDesc.sass);
         break;
       default:
         setSkillDetails("Click a skill for more!");
