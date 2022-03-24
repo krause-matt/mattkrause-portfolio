@@ -56,6 +56,7 @@ export default function Contact() {
   return (
     <div className="contact" id="contact">
       <Modal modal={modal} setModal={setModal} />
+      <div className="title">Contact.</div>
       <form ref={contactForm} className="contact-form" onSubmit={formSubmit}>
         <div className="form-element">
           <label for="name">Name</label>
@@ -91,6 +92,7 @@ export default function Contact() {
           <button>Submit</button>
         </div>
       </form>
+      <div className="title"></div>
     </div>
   );
 }

@@ -1,6 +1,12 @@
 import "./projects.scss";
 import { useState, useEffect } from "react";
-import { ballparkRater, gardenPlotter } from "../images";
+import {
+  ballparkRater,
+  gardenPlotter,
+  pizzaPlace,
+  senateAPI,
+  fitTrain,
+} from "../images";
 
 export default function Projects() {
   const ballpark = {
@@ -15,6 +21,25 @@ export default function Projects() {
     description: "react and redux",
     image: gardenPlotter[0],
   };
+  const pizza = {
+    title: "The Pizza Place",
+    subtitle: "Online ordering for a fake pizza restaurant",
+    description: "react and firebase",
+    image: pizzaPlace[0],
+  };
+  const senate = {
+    title: "Senate Vote Comparator",
+    subtitle:
+      "Tool for fetching data from the ProPublica Congresss API to compare vote history between two Senators",
+    description: "react and firebase",
+    image: senateAPI[0],
+  };
+  const fit = {
+    title: "FITtrain",
+    subtitle: "Gym website built to utilize CSS grid",
+    description: "react and firebase",
+    image: fitTrain[0],
+  };
 
   const [currentProject, setCurrentProject] = useState("ballpark");
   const [projectDetails, setProjectDetails] = useState(ballpark);
@@ -26,6 +51,15 @@ export default function Projects() {
         break;
       case "garden":
         setProjectDetails(garden);
+        break;
+      case "pizza":
+        setProjectDetails(pizza);
+        break;
+      case "senate":
+        setProjectDetails(senate);
+        break;
+      case "fit":
+        setProjectDetails(fit);
         break;
       default:
         setProjectDetails(ballpark);

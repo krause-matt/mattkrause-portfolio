@@ -43,7 +43,7 @@ export default function About() {
           </div>
         </div>
         <div className="right">
-          <div className="aboutme">About Me</div>
+          <div className="aboutme">About Me.</div>
         </div>
       </div>
     </div>
