@@ -11,33 +11,53 @@ import {
 export default function Projects() {
   const ballpark = {
     title: "Ballpark Rater",
-    subtitle: "Baseball field locating and rating app",
-    description: "express & mongo",
+    subtitle: "A professional baseball field locating and rating app",
+    icons: [
+      "devicon-bootstrap-plain",
+      "devicon-express-original",
+      "devicon-html5-plain",
+      "devicon-javascript-plain",
+      "devicon-mongodb-plain",
+    ],
     image: ballparkRater[0],
   };
   const garden = {
     title: "Garden Plotter",
     subtitle: "Gardening social site",
-    description: "react and redux",
+    icons: [
+      "devicon-html5-plain",
+      "devicon-javascript-plain",
+      "devicon-react-original",
+      "devicon-redux-original",
+    ],
     image: gardenPlotter[0],
   };
   const pizza = {
     title: "The Pizza Place",
     subtitle: "Online ordering for a fake pizza restaurant",
-    description: "react and firebase",
+    icons: [
+      "devicon-bootstrap-plain",
+      "devicon-firebase-plain",
+      "devicon-javascript-plain",
+      "devicon-react-original",
+    ],
     image: pizzaPlace[0],
   };
   const senate = {
     title: "Senate Vote Comparator",
     subtitle:
       "Tool for fetching data from the ProPublica Congresss API to compare vote history between two Senators",
-    description: "react and firebase",
+    icons: [
+      "devicon-bootstrap-plain",
+      "devicon-javascript-plain",
+      "devicon-react-original",
+    ],
     image: senateAPI[0],
   };
   const fit = {
     title: "FITtrain",
     subtitle: "Gym website built to utilize CSS grid",
-    description: "react and firebase",
+    icons: ["devicon-html5-plain", "devicon-sass-original"],
     image: fitTrain[0],
   };
 
@@ -103,7 +123,11 @@ export default function Projects() {
           <div className="description">
             <h1>{projectDetails.title}</h1>
             <h3>{projectDetails.subtitle}</h3>
-            <p>{projectDetails.description}</p>
+            <div className="skill-icon-container">
+              {projectDetails.icons.map((skill) => {
+                return <i className={skill} />;
+              })}
+            </div>
           </div>
         </div>
       </div>
