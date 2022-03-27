@@ -59,6 +59,7 @@
           height: 33rem;
           width: 53rem;
           box-shadow: rgba(0, 0, 0, 0.44) 0 0.3rem 1rem;
+          object-fit: cover;
         }
 
         .buttons {
@@ -68,7 +69,7 @@
             border: none;
             margin: 3rem;
             height: 5rem;
-            width: 10rem;
+            width: 15rem;
             font-family: "Secular One", sans-serif;
             font-size: 2rem;
             background-color: $charcoal;
@@ -95,7 +96,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-around;
         margin: 0 10rem;
         color: $charcoal;
