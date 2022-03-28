@@ -23,15 +23,16 @@ export const pizzaPlace = [
 ];
 
 export const senateAPI = [
+  "/project_images/senate-api/vote-details.JPG",
   "/project_images/senate-api/home.JPG",
   "/project_images/senate-api/dropdown.JPG",
   "/project_images/senate-api/details.JPG",
 ];
 
 export const fitTrain = [
+  "/project_images/fit-train/grid.JPG",
   "/project_images/fit-train/main.JPG",
   "/project_images/fit-train/cards.JPG",
-  "/project_images/fit-train/grid.JPG",
 ];
 
 export const tableGrab = [
