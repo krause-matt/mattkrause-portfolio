@@ -24,10 +24,13 @@
 
       .name,
       .frame {
-        // font-family: "GilamBold", sans-serif;
         font-weight: 900;
         font-size: 10rem;
         color: $charcoal;
+
+        @include screen-xlarge {
+          font-size: 8rem;
+        }
       }
 
       .frame {
@@ -111,56 +114,40 @@
         letter-spacing: -0.8rem;
       }
 
-      div[class^="section-"] {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        height: 10rem;
-
-        .left-heading {
-          height: 100%;
-          font-size: 2.5rem;
-          font-family: "GilamBold", sans-serif;
-          letter-spacing: 1rem;
-          margin: 0 2rem;
-          display: flex;
-          align-items: center;
-          justify-content: flex-end;
-          flex: 1;
-        }
-
-        .right-detail {
-          height: 100%;
-          width: 80%;
-          font-size: 2rem;
-          display: flex;
-          align-items: center;
-          justify-content: flex-start;
-          flex: 5;
-          position: relative;
-
-          .samsung,
-          .amazon,
-          .lg {
-            position: absolute;
-            color: $black-coral;
-          }
-
-          .samsung {
-            top: 4rem;
-            left: 10.5rem;
-          }
-
-          .amazon {
-            top: 8.4rem;
-            left: 30rem;
-          }
-          .lg {
-            top: 6.4rem;
-            left: 37rem;
-          }
-        }
+      .about-description {
+        width: 75%;
       }
+
+      // div[class^="section-"] {
+      //   width: 100%;
+      //   display: flex;
+      //   align-items: center;
+      //   height: 10rem;
+
+      //   .left-heading {
+      //     height: 100%;
+      //     font-size: 2.5rem;
+      //     font-family: "GilamBold", sans-serif;
+      //     letter-spacing: 1rem;
+      //     margin: 0 2rem;
+      //     display: flex;
+      //     align-items: center;
+      //     justify-content: flex-end;
+      //     flex: 1;
+      //   }
+
+      // .right-detail {
+      //   height: 100%;
+      //   width: 80%;
+      //   font-size: 2rem;
+      //   display: flex;
+      //   align-items: center;
+      //   justify-content: flex-start;
+      //   flex: 5;
+      //   position: relative;
+
+      //   // }
+      // }
     }
   }
 }

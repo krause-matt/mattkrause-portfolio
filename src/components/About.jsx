@@ -44,7 +44,7 @@ export default function About() {
         </div>
         <div className="right">
           <div className="aboutme">About Me.</div>
-          <p>
+          <p className="about-description">
             I'm an Electrical Engineer transitioning into Front-End Web
             Development.
             <br></br>

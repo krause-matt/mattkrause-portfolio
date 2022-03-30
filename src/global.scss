@@ -1,3 +1,32 @@
+$xlarge-width: 1200px;
+$large-width: 1000px;
+$medium-width: 700px;
+$small-width: 350px;
+
+@mixin screen-xlarge {
+  @media (max-width: #{$xlarge-width}) {
+    @content;
+  }
+}
+
+@mixin screen-large {
+  @media (max-width: #{$large-width}) {
+    @content;
+  }
+}
+
+@mixin screen-medium {
+  @media (max-width: #{$medium-width}) {
+    @content;
+  }
+}
+
+@mixin screen-small {
+  @media (max-width: #{$small-width}) {
+    @content;
+  }
+}
+
 /* SCSS HEX */
 $black-coral: #4e5a60ff;
 $pale-cerulean: #a4c5deff;
