@@ -13,6 +13,10 @@
     justify-content: center;
     background-color: orangered;
 
+    @include screen-medium {
+      flex-direction: column;
+    }
+
     .left {
       height: 80%;
       width: 100%;
@@ -21,6 +25,16 @@
       align-items: center;
       justify-content: center;
       border-right: 0.5rem groove $black-coral;
+
+      @include screen-medium {
+        width: 90%;
+        border-right: none;
+        border-bottom: 0.3rem groove $black-coral;
+        flex: 3;
+      }
+      @include screen-small {
+        flex: 2;
+      }
 
       .name,
       .frame {
@@ -31,6 +45,15 @@
         @include screen-xlarge {
           font-size: 8rem;
         }
+        @include screen-large {
+          font-size: 6rem;
+        }
+        @include screen-medium {
+          font-size: 5rem;
+        }
+        @include screen-small {
+          font-size: 3.5rem;
+        }
       }
 
       .frame {
@@ -40,6 +63,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @include screen-xlarge {
+          font-size: 4rem;
+        }
+        @include screen-medium {
+          font-size: 3rem;
+        }
+        @include screen-medium {
+          font-size: 2.5rem;
+        }
 
         .subframe-1,
         .subframe-5 {
@@ -52,6 +85,19 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @include screen-xlarge {
+              width: 5rem;
+            }
+            @include screen-large {
+              width: 4rem;
+            }
+            @include screen-medium {
+              width: 3rem;
+            }
+            @include screen-small {
+              width: 2rem;
+            }
           }
         }
 
@@ -66,6 +112,19 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @include screen-xlarge {
+              width: 5rem;
+            }
+            @include screen-large {
+              width: 4rem;
+            }
+            @include screen-medium {
+              width: 3rem;
+            }
+            @include screen-small {
+              width: 2rem;
+            }
           }
         }
 
@@ -80,6 +139,19 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @include screen-xlarge {
+              width: 5rem;
+            }
+            @include screen-large {
+              width: 4rem;
+            }
+            @include screen-medium {
+              width: 3rem;
+            }
+            @include screen-small {
+              width: 2rem;
+            }
           }
         }
 
@@ -94,6 +166,19 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @include screen-xlarge {
+              width: 5rem;
+            }
+            @include screen-large {
+              width: 4rem;
+            }
+            @include screen-medium {
+              width: 3rem;
+            }
+            @include screen-small {
+              width: 2rem;
+            }
           }
         }
       }
@@ -108,14 +193,49 @@
       justify-content: center;
       color: $charcoal;
 
+      @include screen-medium {
+        flex: 7;
+        justify-content: flex-start;
+        margin-top: 1rem;
+      }
+      @include screen-small {
+        flex: 8;
+      }
+
       .aboutme {
         font-size: 7rem;
         font-weight: 600;
         letter-spacing: -0.8rem;
+
+        @include screen-xlarge {
+          font-size: 6rem;
+        }
+        @include screen-large {
+          font-size: 5rem;
+          letter-spacing: -0.6rem;
+        }
+        @include screen-medium {
+          font-size: 4rem;
+        }
       }
 
       .about-description {
         width: 75%;
+        font-size: 1.5rem;
+
+        @include screen-xlarge {
+          font-size: 1.4rem;
+        }
+        @include screen-large {
+          width: 80%;
+        }
+        @include screen-medium {
+          width: 90%;
+          line-height: 1.7rem;
+        }
+        @include screen-small {
+          line-height: 1.2rem;
+        }
       }
 
       // div[class^="section-"] {
