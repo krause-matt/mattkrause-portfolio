@@ -59,32 +59,53 @@
     height: 100%;
     width: 30%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+
+    .skills {
+      color: $charcoal;
+      font-size: 7rem;
+      font-weight: 600;
+      letter-spacing: -0.8rem;
+      margin: 8rem 5rem;
+    }
 
     .terminal {
-      height: 60%;
+      height: 50%;
       width: 80%;
       background-color: rgb(51, 51, 51);
       padding: 1rem;
-      // border-radius: 5%;
+      outline: 1rem inset lightblue;
+      position: relative;
 
-      p {
-        font-family: "Press Start 2P", cursive;
-        font-size: 2rem;
+      p, .skill-link {
+        font-family: "Source Code Pro", cursive;
+        font-weight: 600;
+        font-size: 2.5rem;
         line-height: 3rem;
         color: white;
         display: flex;
+        padding: 2rem;
+      }
+
+      .skill-link {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
       .cursor {
         display: none;
 
         &.active {
+          position: absolute;
           display: block;
           color: white;
           font-size: 2rem;
-          transform: translateY(-0.1rem);
+          font-weight: 900;
+          transform: translate(7.3rem, 2.8rem);
           animation-name: cursor;
           animation-duration: 1.2s;
           animation-iteration-count: infinite;
