@@ -4,7 +4,16 @@
   position: relative;
   top: calc(#{$navbar-height});
 
+  
+
   > * {
     height: $component-height;
+
+
+    @include screen-small {
+      height: auto;
+    }
   }
+
+  
 }

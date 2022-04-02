@@ -5,7 +5,7 @@
   position: relative;
 
   .container {
-    position: absolute;
+    //position: absolute;
     height: 100%;
     width: 100%;
     display: flex;
@@ -16,6 +16,8 @@
     @include screen-medium {
       flex-direction: column;
     }
+
+    
 
     .left {
       height: 80%;
@@ -235,39 +237,9 @@
         }
         @include screen-small {
           line-height: 1.2rem;
+          margin: 2rem 1rem;
         }
       }
-
-      // div[class^="section-"] {
-      //   width: 100%;
-      //   display: flex;
-      //   align-items: center;
-      //   height: 10rem;
-
-      //   .left-heading {
-      //     height: 100%;
-      //     font-size: 2.5rem;
-      //     font-family: "GilamBold", sans-serif;
-      //     letter-spacing: 1rem;
-      //     margin: 0 2rem;
-      //     display: flex;
-      //     align-items: center;
-      //     justify-content: flex-end;
-      //     flex: 1;
-      //   }
-
-      // .right-detail {
-      //   height: 100%;
-      //   width: 80%;
-      //   font-size: 2rem;
-      //   display: flex;
-      //   align-items: center;
-      //   justify-content: flex-start;
-      //   flex: 5;
-      //   position: relative;
-
-      //   // }
-      // }
     }
   }
 }
