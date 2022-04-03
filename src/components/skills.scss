@@ -14,6 +14,10 @@
     align-items: center;
     justify-content: flex-start;
 
+    @include screen-large {
+      width: 50%;
+    }
+
     .icon-block {
       height: 10rem;
       width: 30rem;
@@ -23,6 +27,15 @@
       justify-content: center;
       z-index: 10;
       cursor: pointer;
+
+      @include screen-mammoth {
+        width: 23rem;
+        margin-left: 4rem;
+      }
+
+      @include screen-xlarge {
+        width: 18.6rem;
+      }
 
       &:hover {
         border: 0.2rem solid $black-coral;
@@ -36,6 +49,10 @@
         color: black;
         font-size: 8rem;
         transition: all 0.3s ease-out;
+
+        @include screen-mammoth {
+          font-size: 6rem;
+        }
 
         &.active {
           color: white;
@@ -62,6 +79,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+
+    @include screen-large {
+      width: 50%;
+    }
 
     .skills {
       color: $charcoal;

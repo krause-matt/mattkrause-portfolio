@@ -175,6 +175,7 @@ export default function Skills() {
           );
         })}
       </div>
+
       <div className="details">
         <div className="skills">Skills.</div>
         <div className="terminal">
