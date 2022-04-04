@@ -1,22 +1,22 @@
 import "./skills.scss";
 import { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHandPointRight } from "@fortawesome/free-regular-svg-icons";
 
 export default function Skills() {
   const devicons = [
-    { icon: "devicon-bootstrap-plain", skill: "Bootstrap" },
-    { icon: "devicon-css3-plain", skill: "CSS" },
-    { icon: "devicon-express-original", skill: "Express" },
-    { icon: "devicon-firebase-plain", skill: "Firebase" },
-    { icon: "devicon-git-plain", skill: "Git" },
-    { icon: "devicon-github-original", skill: "GitHub" },
     { icon: "devicon-html5-plain", skill: "HTML" },
+    { icon: "devicon-css3-plain", skill: "CSS" },
     { icon: "devicon-javascript-plain", skill: "JavaScript" },
-    { icon: "devicon-mongodb-plain", skill: "MongoDB" },
-    { icon: "devicon-nodejs-plain", skill: "Node.js" },
-    { icon: "devicon-python-plain", skill: "Python" },
     { icon: "devicon-react-original", skill: "React" },
     { icon: "devicon-redux-original", skill: "Redux" },
+    { icon: "devicon-github-original", skill: "GitHub" },
     { icon: "devicon-sass-original", skill: "Sass" },
+    { icon: "devicon-bootstrap-plain", skill: "Bootstrap" },
+    { icon: "devicon-nodejs-plain", skill: "Node.js" },
+    { icon: "devicon-express-original", skill: "Express" },
+    { icon: "devicon-firebase-plain", skill: "Firebase" },
+    { icon: "devicon-mongodb-plain", skill: "MongoDB" },
   ];
 
   const skillDesc = {
@@ -32,7 +32,7 @@ export default function Skills() {
       "I've been contributing my code to GitHub almost daily since learning the basics in Oct. 2021.",
     html: "I am currently working to improve my use of proper semantics and learn more attributes.",
     javascript:
-      "I have completed two JavaScript courses totaling over 40 hours, and have registerd for an advanced topics course as well. JavaScript is used in all of my projects.",
+      "I have completed two JavaScript courses totaling over 40 hours, and have registered for an advanced topics course as well. JavaScript is used in all of my projects.",
     mongodb:
       "Mongo is the DB for my Ballpark Rater CRUD app which uses three schemas. Check it out:",
     nodejs:
@@ -179,19 +179,18 @@ export default function Skills() {
       <div className="details">
         <div className="skills">Skills.</div>
         <div className="terminal">
-          <p>
-            {skillDetails}
-            <div
-              className={
-                skillDetails === "Click a skill for more!"
-                  ? "cursor active"
-                  : "cursor"
-              }
-            >
-              |
-            </div>
-          </p>
+          <p>{skillDetails}</p>
+
           <a href={skillLink} className="skill-link">
+            {skillLink ? (
+              <FontAwesomeIcon
+                className="finger"
+                icon={faHandPointRight}
+              ></FontAwesomeIcon>
+            ) : (
+              ""
+            )}
+            <span>&nbsp;</span>
             {skillLinkText}
           </a>
         </div>

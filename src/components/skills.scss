@@ -5,76 +5,140 @@
   align-items: center;
   justify-content: center;
 
-  .icons {
-    height: 100%;
-    width: 70%;
-    background-color: lightblue;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
+  @include screen-medium {
+    flex-direction: column-reverse;
+  }
 
-    @include screen-large {
-      width: 50%;
-    }
-
-    .icon-block {
-      height: 10rem;
-      width: 30rem;
-      margin: 1rem;
+    .icons {
+      height: 100%;
+      width: 65%;
+      background-color: lightblue;
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      z-index: 10;
-      cursor: pointer;
-
-      @include screen-mammoth {
-        width: 23rem;
-        margin-left: 4rem;
+  
+      @include screen-large {
+        width: 50%;
+      }  
+      @include screen-medium {
+        width: 100%;
+        height: 50%;
       }
-
-      @include screen-xlarge {
-        width: 18.6rem;
+  
+      @include screen-small {
+        flex-wrap: nowrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        margin: 2rem;
       }
-
-      &:hover {
-        border: 0.2rem solid $black-coral;
-
-        &.active {
-          border: none;
-        }
-      }
-
-      i {
-        color: black;
-        font-size: 8rem;
-        transition: all 0.3s ease-out;
-
+  
+      
+  
+      .icon-block {
+        height: 10rem;
+        width: 27rem;
+        margin: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        cursor: pointer;
+  
         @include screen-mammoth {
-          font-size: 6rem;
+          width: 22rem;
+          margin: 0.5rem;
         }
+        @include screen-xlarge {
+          width: 21rem;
+        }
+        @include screen-large {
+          width: 17rem;
+          height: 7rem;
+        }
+        @include screen-medium {
+          width: 15rem;
+          height: 4.5rem;
+        }  
+        @include screen-small {
+          width: 10rem;
+          flex-direction: column-reverse;
+        }
+  
+        &:hover {
+          border: 0.2rem solid $black-coral;
+          @include screen-small {
+            border: none;
+            cursor: default;
+          }
+  
+          &.active {
+            border: none;
+          }
+        }
+  
+        i {
+          color: black;
+          font-size: 8rem;
+          transition: all 0.3s ease-out;
+  
+          @include screen-mammoth {
+            font-size: 6rem;
+          }
+  
+          @include screen-large {
+            font-size: 4rem;
+          }
+          @include screen-medium {
+            font-size: 3rem;
+          }
+  
+          &.active {
+            color: white;
 
-        &.active {
-          color: white;
+            @include screen-small {
+              color: inherit;
+            }
+          }
+        }
+  
+        p {
+          font-family: "Secular One", sans-serif;
+          font-size: 2.5rem;
+          margin-left: 3rem;
+          transition: all 0.3s ease-out;
+  
+          @include screen-mammoth {
+            font-size: 2.2rem;
+            margin-left: 2rem;
+          }
+          @include screen-large {
+            font-size: 2rem;
+            margin-left: 1rem;
+          }
+          @include screen-medium {
+            font-size: 1.9rem;
+            margin-left: 0.8rem;
+          }
+          @include screen-small {
+            margin-left: 0rem;
+          }
+  
+          &.active {
+            color: white;
+
+            @include screen-small {
+              color: inherit;
+            }
+          }
         }
       }
-
-      p {
-        font-family: "Secular One", sans-serif;
-        font-size: 2.5rem;
-        margin-left: 3rem;
-        transition: all 0.3s ease-out;
-
-        &.active {
-          color: white;
-        }
-      }
-    }
-  }
+    }  
 
   .details {
     height: 100%;
-    width: 30%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,21 +148,45 @@
       width: 50%;
     }
 
+    @include screen-medium {
+      width: 100%;
+      height: 50%;
+    }
+
     .skills {
       color: $charcoal;
       font-size: 7rem;
       font-weight: 600;
       letter-spacing: -0.8rem;
-      margin: 8rem 5rem;
+      margin: 5rem;
+
+      @include screen-xlarge {
+        font-size: 6rem;
+      }
+      @include screen-large {
+        font-size: 5rem;
+        letter-spacing: -0.6rem;
+      }
+
+      @include screen-medium {
+        margin: 1rem;
+        font-size: 4rem;
+        letter-spacing: -0.4rem;
+      }
+
+      
     }
 
     .terminal {
-      height: 50%;
+      height: 60%;
       width: 80%;
       background-color: rgb(51, 51, 51);
       padding: 1rem;
       outline: 1rem inset lightblue;
-      position: relative;
+
+      @include screen-small {
+        display: none;
+      }
 
       p, .skill-link {
         font-family: "Source Code Pro", cursive;
@@ -108,6 +196,16 @@
         color: white;
         display: flex;
         padding: 2rem;
+
+        @include screen-mammoth {
+          font-size: 2.1rem;
+          line-height: 2.5rem;
+        }
+        @include screen-medium {
+          font-size: 1.8rem;
+          line-height: 1.8rem;
+          padding: 1rem;
+        }
       }
 
       .skill-link {
@@ -115,23 +213,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
-      }
 
-      .cursor {
-        display: none;
-
-        &.active {
-          position: absolute;
-          display: block;
-          color: white;
-          font-size: 2rem;
-          font-weight: 900;
-          transform: translate(7.3rem, 2.8rem);
+        .finger {
           animation-name: cursor;
-          animation-duration: 1.2s;
+          animation-duration: 2s;
           animation-iteration-count: infinite;
         }
       }
+
+      
     }
   }
 }
