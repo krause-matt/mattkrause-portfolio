@@ -158,7 +158,9 @@ export default function Skills() {
               }
               onClick={() => {
                 setCurrentSkill(object.skill);
-                setSkillDetails(object.skill.toLowerCase());
+                if (!currentSkill || currentSkill !== object.skill) {
+                  setSkillDetails(object.skill.toLowerCase());
+                }
               }}
             >
               <i
