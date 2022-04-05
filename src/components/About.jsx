@@ -50,12 +50,12 @@ export default function About() {
             <br></br>
             <br></br>
             My introduction to web development came mid-2021 after researching
-            how to build a website for a work project. Along with learning the
-            latest web development languages and tools, I discovered that
-            creating useful, interactive apps simultaneously challenged my
-            logical and creative sides in an exciting way I hadn't experienced
-            before. Since then, I have been coding on daily basis to enhance my
-            web development skills and portfolio of personal projects.
+            how to build a website. Along with learning the latest web
+            development languages and tools, I discovered that creating useful,
+            interactive apps simultaneously challenged my logical and creative
+            sides in an exciting way I hadn't experienced before. Since then, I
+            have been coding on a daily basis to enhance my web development
+            skills and portfolio of personal projects.
             <br></br>
             <br></br>I have spent my professional career solving problems for
             some of the world's largest brands including Samsung, Amazon, and

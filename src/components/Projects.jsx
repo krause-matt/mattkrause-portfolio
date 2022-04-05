@@ -123,6 +123,7 @@ export default function Projects() {
         </div>
         <div className="display">
           <div className="images">
+            <div className="projects">Projects.</div>
             <img src={projectDetails.image} />
             <div className="buttons">
               <button>Launch App</button>
