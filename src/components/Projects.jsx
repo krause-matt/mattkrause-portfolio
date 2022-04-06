@@ -107,6 +107,7 @@ export default function Projects() {
     <div className="projects" id="projects">
       <div className="container">
         <div className="selector">
+          <div className="projects-med">Projects.</div>
           <ul>
             {projectInfo.map((object) => {
               return (
