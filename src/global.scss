@@ -2,6 +2,7 @@ $mammoth-width: 1370px;
 $xlarge-width: 1200px;
 $large-width: 1000px;
 $medium-width: 760px;
+$sixhundred: 600px;
 $small-width: 350px;
 
 @mixin screen-mammoth {
@@ -24,6 +25,12 @@ $small-width: 350px;
 
 @mixin screen-medium {
   @media (max-width: #{$medium-width}) {
+    @content;
+  }
+}
+
+@mixin screen-sixhundred {
+  @media (max-width: #{$sixhundred}) {
     @content;
   }
 }

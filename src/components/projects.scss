@@ -92,6 +92,10 @@
       flex: 6;
       display: flex;
 
+      @include screen-sixhundred {
+        flex-direction: column-reverse;
+      }
+
       .images {
         flex: 1;
         display: flex;
@@ -149,6 +153,12 @@
             height: 22rem;
             width: 30rem;
           }
+
+          @include screen-sixhundred {
+            height: 20rem;
+            width: 26rem;
+            transform: translateY(-4rem);
+          }
         }
 
         .buttons {
@@ -158,6 +168,10 @@
             display: flex;
             flex-direction: column;
             margin-top: 1rem;
+          }
+
+          @include screen-sixhundred {
+            flex-direction: row;
           }
 
           button {
@@ -210,6 +224,11 @@
           margin: 0 1rem 0 4rem;
         }
 
+        @include screen-sixhundred {
+          margin: 5rem 1rem 0 2rem;
+          justify-content: flex-start;
+        }
+
         > * {
           margin: 2.5rem 0rem;
 
@@ -230,6 +249,10 @@
           @include screen-large {
             font-size: 3.2rem;
           }
+
+          @include screen-sixhundred {
+            font-size: 2.5rem;
+          }
         }
 
         h3 {
@@ -243,6 +266,10 @@
           @include screen-large {
             font-size: 2rem;
           }
+
+          @include screen-sixhundred {
+            font-size: 1.8rem;
+          }
         }
 
         p {
@@ -251,6 +278,10 @@
           @include screen-large {
             font-size: 1.4rem;
           }
+          @include screen-sixhundred {
+            display: none;
+          }
+
         }
 
         .skill-icon-container {
@@ -264,15 +295,25 @@
             flex-wrap: wrap;
           }
 
+          @include screen-sixhundred {
+            margin-top: -2rem;
+            justify-content: flex-start;
+          }
+
 
           > * {
             font-size: 3rem;
-            margin: 1.5rem;
+            margin: 1.5rem;           
 
             @include screen-large {
               font-size: 2.5rem;
               margin: 1rem;
             }
+
+            @include screen-sixhundred {
+              margin: 0 1.5rem 1.5rem 0;
+            }
+
           }
         }
       }
