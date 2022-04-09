@@ -113,6 +113,14 @@
           margin-left: 1rem;
         }
 
+        @include screen-sixhundred {
+          transform: translateY(-3rem);
+        }
+
+        @include screen-small {
+          transform: none;
+        }
+
         .projects {
           font-size: 7rem;
           font-weight: 600;
@@ -172,6 +180,11 @@
 
           @include screen-sixhundred {
             flex-direction: row;
+            margin-top: -3rem;
+          }
+
+          @include screen-small {
+            margin-bottom: 2rem;
           }
 
           button {
@@ -225,7 +238,7 @@
         }
 
         @include screen-sixhundred {
-          margin: 5rem 1rem 0 2rem;
+          margin: 0 1rem 0 2rem;
           justify-content: flex-start;
         }
 
@@ -253,6 +266,10 @@
           @include screen-sixhundred {
             font-size: 2.5rem;
           }
+
+          @include screen-small {
+            display: none;
+          }
         }
 
         h3 {
@@ -269,6 +286,11 @@
 
           @include screen-sixhundred {
             font-size: 1.8rem;
+            padding: 2.1rem;
+          }
+
+          @include screen-small {
+            display: none;
           }
         }
 
@@ -296,8 +318,13 @@
           }
 
           @include screen-sixhundred {
-            margin-top: -2rem;
+            margin-top: -5rem;
+            padding-left: 2rem;
             justify-content: flex-start;
+          }
+
+          @include screen-small {
+            display: none;
           }
 
 
