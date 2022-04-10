@@ -8,10 +8,9 @@ export default function NavBar() {
     <div className="navbar">
       <div className="container">
         <div
-          className="hamburger"
+          className={dropDown ? "hamburger active" : "hamburger"}
           onClick={() => {
             setDropDown(!dropDown);
-            console.log("dropDown", dropDown);
           }}
         >
           <span className="line-1"></span>
@@ -39,12 +38,62 @@ export default function NavBar() {
       <div className={dropDown ? "dropdown active" : "dropdown inactive"}>
         <ul className="dropdown-links">
           <li className="dropdown-link-1">
-            <a href="#about">About</a>
+            <a
+              className="link"
+              href="#about"
+              onClick={() => {
+                setDropDown(!dropDown);
+              }}
+            >
+              About
+            </a>
           </li>
-          <li className="dropdown-link-2">Skills</li>
-          <li className="dropdown-link-3">Projects</li>
-          <li className="dropdown-link-4">Resume</li>
-          <li className="dropdown-link-5">Contact</li>
+          <li className="dropdown-link-2">
+            <a
+              className="link"
+              href="#skills"
+              onClick={() => {
+                setDropDown(!dropDown);
+              }}
+            >
+              Skills
+            </a>
+          </li>
+          <li className="dropdown-link-3">
+            <a
+              className="link"
+              href="#projects"
+              onClick={() => {
+                setDropDown(!dropDown);
+              }}
+            >
+              Projects
+            </a>
+          </li>
+          <li className="dropdown-link-4">
+            <a className="link" href="#about">
+              <a
+                className="link"
+                href="#about"
+                onClick={() => {
+                  setDropDown(!dropDown);
+                }}
+              >
+                Resume
+              </a>
+            </a>
+          </li>
+          <li className="dropdown-link-5">
+            <a
+              className="link"
+              href="#contact"
+              onClick={() => {
+                setDropDown(!dropDown);
+              }}
+            >
+              Contact
+            </a>
+          </li>
         </ul>
       </div>
     </div>

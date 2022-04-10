@@ -8,15 +8,23 @@
   left: 0;
   z-index: 50;
 
-  background-color: $black-coral;
-
   .container {
     height: 100%;
+    position: relative;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    z-index: 20;
+    background-color: $black-coral;
 
     .hamburger {
+
+      z-index: 10;
+
+      span {
+        transition: all 0.3s ease-out;
+      }
+
       display: none;
 
       @include screen-medium {
@@ -26,13 +34,35 @@
         justify-content: center;
         transform: translate(calc((100vw / 2 * -1) + 1.5rem), 0.5rem);
         cursor: pointer;
+        
       }  
 
       > * {
         height: 0.2rem;
         width: 3rem;
         margin-bottom: 1rem;
-        background-color: white;
+        background-color: blue;
+      }
+    }
+
+    .hamburger.active {
+
+      span {
+        transition: all 0.3s ease-out;
+        height: 0.2rem;
+      }
+
+      .line-1 {
+        transform: rotate(225deg) translate(-1rem, -0.7rem);
+      }
+
+      .line-2 {
+        opacity: 0;
+        
+      }
+
+      .line-3 {
+        transform: rotate(-225deg) translate(-1rem, 0.7rem);
       }
     }
 
@@ -64,19 +94,14 @@
       }
     }
   }
-
   .dropdown.inactive {
-    transform: translateY(calc(-1 * $dropdown-height));
-
-    > * {
-      display: none;
-    }
-  }
-
-  .dropdown.active {
+    position: absolute;
+    width: 100%;
     background-color: lightyellow;
+    transform: translateY(-65rem);
+    transition: all ease-out 1s;
     height: $dropdown-height;
-    transition: all ease-out 0.25s;
+    z-index: 1;
 
     .dropdown-links {
       height: 100%;
@@ -87,7 +112,38 @@
       list-style: none;
       font-size: 3rem;
       font-family: "CodeProNormal", sans-serif;
+      
+      .link {
+        text-decoration: none;
+        color: inherit;
+      }
     
     }
   }
+
+  .dropdown.active {
+    transform: translateY(0);
+    background-color: lightyellow;
+    height: $dropdown-height;
+    transition: all ease-out 1s;
+    z-index: 1;
+
+    .dropdown-links {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      list-style: none;
+      font-size: 3rem;
+      font-family: "CodeProNormal", sans-serif;
+      
+      .link {
+        text-decoration: none;
+        color: inherit;
+      }
+    
+    }
+  }
+  
 }
