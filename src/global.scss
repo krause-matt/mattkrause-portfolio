@@ -123,6 +123,8 @@ $gradient-radial: radial-gradient(
 
 $navbar-height: 8rem;
 $component-height: calc(100vh - 3 * #{$navbar-height});
+$dropdown-height: calc(100vh - #{$navbar-height});
+$mid-screen: calc(100vw / 2);
 
 @font-face {
   font-family: "Circus";
