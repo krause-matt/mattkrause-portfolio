@@ -123,10 +123,12 @@
 
         @include screen-sixhundred {
           transform: translateY(-3rem);
+          margin-top: 5rem;
         }
 
         @include screen-small {
           transform: none;
+          margin: 0;
         }
 
         .projects {
@@ -294,7 +296,7 @@
 
           @include screen-sixhundred {
             font-size: 1.8rem;
-            padding: 2.1rem;
+            padding: 1rem 2rem 1rem 0;
           }
 
           @include screen-small {
@@ -327,7 +329,8 @@
 
           @include screen-sixhundred {
             margin-top: -5rem;
-            padding-left: 2rem;
+            margin-bottom: 4rem;
+            // padding-left: 2rem;
             justify-content: flex-start;
           }
 

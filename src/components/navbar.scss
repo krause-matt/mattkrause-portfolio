@@ -41,7 +41,7 @@
         height: 0.2rem;
         width: 3rem;
         margin-bottom: 1rem;
-        background-color: blue;
+        background-color: $platinum;
       }
     }
 
@@ -98,8 +98,8 @@
     position: absolute;
     width: 100%;
     background-color: lightyellow;
-    transform: translateY(-65rem);
-    transition: all ease-out 1s;
+    transform: translateY(-100rem);
+    transition: all ease-out 0.5s;
     height: $dropdown-height;
     z-index: 1;
 
@@ -125,7 +125,7 @@
     transform: translateY(0);
     background-color: lightyellow;
     height: $dropdown-height;
-    transition: all ease-out 1s;
+    transition: all ease-out 0.5s;
     z-index: 1;
 
     .dropdown-links {

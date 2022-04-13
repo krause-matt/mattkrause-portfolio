@@ -1,9 +1,20 @@
+$navbar-height: 8rem;
+$component-height: calc(100vh - 3 * #{$navbar-height});
+$dropdown-height: calc(100vh - #{$navbar-height});
+$mid-screen: calc(100vw / 2);
+
 $mammoth-width: 1370px;
 $xlarge-width: 1200px;
 $large-width: 1000px;
 $medium-width: 760px;
 $sixhundred: 600px;
-$small-width: 350px;
+$small-width: 350px; 
+
+@mixin screen-vertical {
+  @media (max-height: #{$medium-width}) {
+    @content;
+  }
+}
 
 @mixin screen-mammoth {
   @media (max-width: #{$mammoth-width}) {
@@ -121,10 +132,7 @@ $gradient-radial: radial-gradient(
   #ebe6e6ff
 );
 
-$navbar-height: 8rem;
-$component-height: calc(100vh - 3 * #{$navbar-height});
-$dropdown-height: calc(100vh - #{$navbar-height});
-$mid-screen: calc(100vw / 2);
+
 
 @font-face {
   font-family: "Circus";

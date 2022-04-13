@@ -50,7 +50,7 @@ export default function Skills() {
     link: {
       express: "#skills",
       firebase: "#skills",
-      github: "#skills",
+      github: "https://github.com/krause-matt",
       mongodb: "#skills",
       redux: "#skills",
     },
@@ -183,7 +183,7 @@ export default function Skills() {
         <div className="terminal">
           <p>{skillDetails}</p>
 
-          <a href={skillLink} className="skill-link">
+          <a href={skillLink} className="skill-link" target="_blank">
             {skillLink ? (
               <FontAwesomeIcon
                 className="finger"
