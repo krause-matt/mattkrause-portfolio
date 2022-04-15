@@ -1,7 +1,7 @@
 @import "../global.scss";
 
 .projects {
-  background-color: lightyellow;
+  background-color: $platinum;
 
   .container {
     height: 100%;
@@ -13,7 +13,6 @@
     }
 
     .selector {
-      height: 100%;
       flex: 1;
 
       @include screen-medium {
@@ -81,6 +80,8 @@
 
           &:hover {
             cursor: pointer;
+            background-color: powderblue;
+            color: white;
           }
 
           &.active {
@@ -106,7 +107,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-left: 5rem;
+        margin: 3rem 0 3rem 5rem;
         max-height:fit-content;
 
         @include screen-xlarge {
@@ -306,6 +307,7 @@
 
         p {
           font-size: 1.5rem;
+          padding-right: 1rem;
 
           @include screen-large {
             font-size: 1.4rem;

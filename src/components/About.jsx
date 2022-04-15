@@ -59,8 +59,8 @@ export default function About() {
             <br></br>
             <br></br>I have spent my professional career solving problems for
             some of the world's largest brands including Samsung, Amazon, and
-            LG. My experience and determination make me an ideal candidate for a
-            team in need of a developer eager to learn and contribute.
+            LG. My experience makes me an ideal candidate for a team in need of
+            a developer eager to learn and contribute.
             <br></br>
             <br></br>
             Thanks for visiting, and feel free to{" "}

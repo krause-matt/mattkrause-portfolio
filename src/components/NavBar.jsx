@@ -19,19 +19,19 @@ export default function NavBar() {
         </div>
         <ul className="links">
           <li>
-            <a href="#about">about</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="#skills">skills</a>
+            <a href="#skills">Skills</a>
           </li>
           <li>
-            <a href="#projects">projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#about">resume</a>
+            <a href="#about">Resume</a>
           </li>
           <li>
-            <a href="#contact">contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>

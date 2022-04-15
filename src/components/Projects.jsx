@@ -66,7 +66,7 @@ export default function Projects() {
     subtitle: "Gym landing page designed using CSS grid",
     icons: ["devicon-html5-plain", "devicon-sass-original"],
     detail:
-      "This project differs from the rest in that it is design-first rather than function-first. I had seen both CSS grid and Sass being used while watching developer tutorials on YouTube, and wanted to try them for myself. The speed at which you can design an app with Bootstrap is convenient, but I enjoyed getting to utilize my creative chops a bit more with custom styling. I have taken my lesson on Sass forward to other work, including the portfolio site you're on right now!",
+      "This project differs from the rest in that it is design-first rather than function-first. I had seen both CSS grid and Sass being used while watching developer tutorials on YouTube, and wanted to try them for myself. The speed at which you can design an app with Bootstrap is convenient, but I enjoyed learning how to utilize my creative chops a bit more with custom styling. I have taken my lesson on Sass forward to other work, including the portfolio site you're on right now!",
     image: fitTrain[0],
   };
 

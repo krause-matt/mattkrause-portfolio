@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: antiquewhite;
 
   @include screen-medium {
     flex-direction: column-reverse;
@@ -14,7 +15,8 @@
       height: auto;
       min-height: 60rem;
       width: 65%;
-      background-color: lightblue;
+      background-color: $platinum;
+      background-color: antiquewhite;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -82,7 +84,7 @@
         }
   
         i {
-          color: black;
+          color: $charcoal;
           font-size: 8rem;
           transition: all 0.3s ease-out;
   
@@ -99,6 +101,7 @@
   
           &.active {
             color: white;
+            color: $cerulean-frost;
 
             @include screen-small {
               color: inherit;
@@ -111,6 +114,7 @@
           font-size: 2.5rem;
           margin-left: 3rem;
           transition: all 0.3s ease-out;
+          color: $black-coral;
   
           @include screen-mammoth {
             font-size: 2.2rem;
@@ -130,6 +134,7 @@
   
           &.active {
             color: white;
+            color: $cerulean-frost;
 
             @include screen-small {
               color: inherit;
