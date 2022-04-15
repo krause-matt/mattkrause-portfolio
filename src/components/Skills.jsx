@@ -1,68 +1,11 @@
 import "./skills.scss";
+import { skillDesc, skillLinks } from "../content";
 import { useState, useEffect } from "react";
+import { devicons } from "../icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandPointRight } from "@fortawesome/free-regular-svg-icons";
 
 export default function Skills() {
-  const devicons = [
-    { icon: "devicon-html5-plain", skill: "HTML" },
-    { icon: "devicon-css3-plain", skill: "CSS" },
-    { icon: "devicon-javascript-plain", skill: "JavaScript" },
-    { icon: "devicon-react-original", skill: "React" },
-    { icon: "devicon-redux-original", skill: "Redux" },
-    { icon: "devicon-github-original", skill: "GitHub" },
-    { icon: "devicon-sass-original", skill: "Sass" },
-    { icon: "devicon-bootstrap-plain", skill: "Bootstrap" },
-    { icon: "devicon-nodejs-plain", skill: "Node.js" },
-    { icon: "devicon-express-original", skill: "Express" },
-    { icon: "devicon-firebase-plain", skill: "Firebase" },
-    { icon: "devicon-mongodb-plain", skill: "MongoDB" },
-  ];
-
-  const skillDesc = {
-    bootstrap:
-      "I've used Bootstrap v4 and v5 to create attractive and responsive sites.",
-    css: "My projects have been enhanced with CSS media queries, flexbox/grid, and animations.",
-    express:
-      "I used Express as a REST API server for my Ballpark Rater CRUD app. Check it out:",
-    firebase:
-      "I taught myself how to utilize Google Firebase when setting up an orders database for my React Pizza Store app. Check it out:",
-    git: "I utilize Git for version control, documentation, and establishing remotes on all of my apps.",
-    github:
-      "I've been contributing my code to GitHub almost daily since learning the basics in Oct. 2021.",
-    html: "I am currently working to improve my use of proper semantics and learn more attributes.",
-    javascript:
-      "I have completed two JavaScript courses totaling over 40 hours, and have registered for an advanced topics course as well. JavaScript is used in all of my projects.",
-    mongodb:
-      "Mongo is the DB for my Ballpark Rater CRUD app which uses three schemas. Check it out:",
-    nodejs:
-      "I use node to run JavaScript code and npm to add necessary libraries and frameworks to my projects.",
-    python:
-      "I use Python at work for data analysis and visualization projects. Not used explicitly for web development, but I feel it enhances my overall coding skill.",
-    react:
-      "Three projects listed below (plus the site you're on right now!) were built to be interactive and seamless using React state management and Hooks.",
-    redux:
-      "My Garden Plotter app has a larger component and state system which allowed me to learn and deploy Redux. Check it out:",
-    sass: "I enjoy taking advantage of Sass nesting and global variables to make styling easier.",
-  };
-
-  const skillLinks = {
-    link: {
-      express: "#skills",
-      firebase: "#skills",
-      github: "https://github.com/krause-matt",
-      mongodb: "#skills",
-      redux: "#skills",
-    },
-    text: {
-      express: "Ballpark Rater App",
-      firebase: "Pizza Place App",
-      github: "Visit my GitHub",
-      mongodb: "Ballpark Rater App",
-      redux: "Garden Plotter App",
-    },
-  };
-
   const [currentSkill, setCurrentSkill] = useState(null);
   const [skillDetails, setSkillDetails] = useState(null);
   const [skillLink, setSkillLink] = useState(null);

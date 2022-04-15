@@ -98,7 +98,7 @@
   .dropdown.inactive {
     position: absolute;
     width: 100%;
-    background-color: lightyellow;
+    background-color: $pale-cerulean;
     transform: translateY(-100rem);
     transition: all ease-out 0.5s;
     height: $dropdown-height;
@@ -116,7 +116,7 @@
       
       .link {
         text-decoration: none;
-        color: $cerulean-frost;
+        color: $black-coral;
       }
     
     }
@@ -124,7 +124,7 @@
 
   .dropdown.active {
     transform: translateY(0);
-    background-color: lightyellow;
+    background-color: $pale-cerulean;
     height: $dropdown-height;
     transition: all ease-out 0.5s;
     z-index: 1;
@@ -142,10 +142,10 @@
       
       .link {
         text-decoration: none;
-        color: $cerulean-frost;
+        color: $black-coral;
 
         &:hover {
-          color: $pale-cerulean;
+          color: $charcoal;
         }
       }
     
