@@ -4,8 +4,8 @@ This is my personal project portfolio to showcase apps I have created while lear
 
 ## Project List
 
-Ballpark Rater : App for locating and reviewing professional baseball stadiums
-FITtrain : Landing page for a modern gym
-Garden Plotter : Social site for documenting and sharing your personal garden
-Pizza Place : eCommerce site to order pizza online
-Senate Vote Comparator : Compare votes between US senators dating back to 1989 using the ProPublica congress API
+*Ballpark Rater : App for locating and reviewing professional baseball stadiums
+*FITtrain : Landing page for a modern gym
+*Garden Plotter : Social site for documenting and sharing your personal garden
+*Pizza Place : eCommerce site to order pizza online
+\*Senate Vote Comparator : Compare votes between US senators dating back to 1989 using the ProPublica congress API
