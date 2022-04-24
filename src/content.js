@@ -19,6 +19,8 @@ export const ballpark = {
   detail:
     "As is the case with all of my projects, I chose Ballpark Rater to expose myself to new concepts in the form of an app themed around a personal interest. Being my first larger-scale app, learning several new concepts at once challenged me. I was introduced to RESTful routing, CRUD operations, middleware, and databases. The practice I got with asynchronous JavaScript was beneficial and a necessary tool I took on most of my following projects. Have fun checking out the site and leave a rating for any ballparks you've visited!",
   image: ballparkRater[0],
+  app: "https://ballpark-rater.herokuapp.com/",
+  code: "https://github.com/krause-matt/ballpark-rater-express-mongodb",
 };
 export const garden = {
   title: "Garden Plotter",
@@ -32,6 +34,8 @@ export const garden = {
   detail:
     "I've always thought an app to keep track of garden and planting details from year-to-year would be useful, so I decided to build one using React and Redux. Several customizable garden features and components were purposely included to learn Redux state management. My main focus for this project was the front-end, so I took care of the REST API with a limited npm package. Implementing CRUD operations using this strategy was tricky. If I were to build the app today, I'd establish a proper database and allow photo uploads. I learned authentication/authorization using Google OAuth for this app.",
   image: gardenPlotter[0],
+  app: "https://garden-plotter-react-redux.herokuapp.com/",
+  code: "https://github.com/krause-matt/gardenplotter-react-redux",
 };
 export const pizza = {
   title: "The Pizza Place",
@@ -45,6 +49,8 @@ export const pizza = {
   detail:
     "I wanted to try creating an e-commerce site and get more experience with React code. The order customization portion of the app was a great learning process, as I had a combination of drop-downs, radio buttons, and checkboxes all contributing to state. I learned Google Firebase and Stripe to take care of the backend database and payment processes. I would like to try implementing Redux into this app or my next e-commerce project for more efficient state management between major components.",
   image: pizzaPlace[0],
+  app: "https://the-pizzaplace.netlify.app/",
+  code: "https://github.com/krause-matt/ecommerce-pizzaplace-react",
 };
 export const senate = {
   title: "Senate Vote Comparator",
@@ -57,6 +63,8 @@ export const senate = {
   detail:
     "During a prior presidential primary race, I remember being curious about vote differences in congress between the candidates. This came to my mind when determining what to build for my first React app. Lucky, a public API existed with all of the data necessary to make a vote comparitor I was interested in. With almost 20 state items and multiple API requests, I had to work through problems with infinite React rendering. I used log statements to better understand the process order of my code and help correctly set my useEffect dependencies and useRef variables.",
   image: senateAPI[0],
+  app: "https://senate-vote-comparator.netlify.app/",
+  code: "https://github.com/krause-matt/senate-vote-comparator-api",
 };
 export const fit = {
   title: "FITtrain",
@@ -65,6 +73,8 @@ export const fit = {
   detail:
     "This project differs from the rest in that it is design-first rather than function-first. I had seen both CSS grid and Sass being used while watching developer tutorials on YouTube, and wanted to try them for myself. The speed at which you can design an app with Bootstrap is convenient, but I enjoyed learning how to utilize my creative chops a bit more with custom styling. I have taken my lesson on Sass forward to other work, including the portfolio site you're on right now!",
   image: fitTrain[0],
+  app: "https://fittrain-css-grid.herokuapp.com/",
+  code: "https://github.com/krause-matt/css-grid-fittrain",
 };
 
 export const projectInfo = [
@@ -104,11 +114,11 @@ export const skillDesc = {
 
 export const skillLinks = {
   link: {
-    express: "#skills",
-    firebase: "#skills",
+    express: "https://ballpark-rater.herokuapp.com/",
+    firebase: "https://the-pizzaplace.netlify.app/",
     github: "https://github.com/krause-matt",
-    mongodb: "#skills",
-    redux: "#skills",
+    mongodb: "https://ballpark-rater.herokuapp.com/",
+    redux: "https://garden-plotter-react-redux.herokuapp.com/",
   },
   text: {
     express: "Ballpark Rater App",

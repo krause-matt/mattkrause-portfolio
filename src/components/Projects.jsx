@@ -53,8 +53,12 @@ export default function Projects() {
             <div className="projects">Projects.</div>
             <img src={projectDetails.image} />
             <div className="buttons">
-              <button>Launch App</button>
-              <button>View Code</button>
+              <a href={projectDetails.app} target="_blank">
+                <button>Launch App</button>
+              </a>
+              <a href={projectDetails.code} target="_blank">
+                <button>View Code</button>
+              </a>
             </div>
           </div>
           <div className="description">
