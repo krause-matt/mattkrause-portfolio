@@ -30,21 +30,21 @@ export default function Contact() {
     const emailInput = document.getElementById("email");
     const messageInput = document.getElementById("message");
 
-    // emailjs
-    //   .sendForm(
-    //     process.env.REACT_APP_EMAILJS_SERVICE_ID,
-    //     process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-    //     contactForm.current,
-    //     process.env.REACT_APP_EMAILJS_USER_ID
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text);
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //     }
-    //   );
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        contactForm.current,
+        process.env.REACT_APP_EMAILJS_USER_ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
 
     nameInput.value = "";
     emailInput.value = "";
