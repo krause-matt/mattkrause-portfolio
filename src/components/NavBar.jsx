@@ -22,7 +22,7 @@ export default function NavBar() {
             <a href="#about">About</a>
           </li>
           <li>
-            <a href="#skills">Skills</a>
+            <a href="#skills-anchor">Skills</a>
           </li>
           <li>
             <a href="#projects">Projects</a>

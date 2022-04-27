@@ -90,6 +90,9 @@ export default function Skills() {
 
   return (
     <div className="skills" id="skills">
+      <div className="anchor" id="skills-anchor">
+        skills-anchor
+      </div>
       <div className="icons">
         {devicons.map((object) => {
           return (
