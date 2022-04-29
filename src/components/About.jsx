@@ -3,6 +3,9 @@ import "./about.scss";
 export default function About() {
   return (
     <div className="about" id="about">
+      <div className="anchor" id="about-anchor">
+        about-anchor
+      </div>
       <div className="container">
         <div className="left">
           <div className="name">Matt Krause</div>

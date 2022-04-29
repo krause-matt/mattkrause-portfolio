@@ -19,16 +19,16 @@ export default function NavBar() {
         </div>
         <ul className="links">
           <li>
-            <a href="#about">About</a>
+            <a href="#about-anchor">About</a>
           </li>
           <li>
             <a href="#skills-anchor">Skills</a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <a href="#projects-anchor">Projects</a>
           </li>
           <li>
-            <a href="#about">Resume</a>
+            <a href="#about-anchor">Resume</a>
           </li>
           <li>
             <a href="#contact">Contact</a>
@@ -40,7 +40,7 @@ export default function NavBar() {
           <li className="dropdown-link-1">
             <a
               className="link"
-              href="#about"
+              href="#about-anchor"
               onClick={() => {
                 setDropDown(!dropDown);
               }}
@@ -51,7 +51,7 @@ export default function NavBar() {
           <li className="dropdown-link-2">
             <a
               className="link"
-              href="#skills"
+              href="#skills-anchor"
               onClick={() => {
                 setDropDown(!dropDown);
               }}
@@ -62,7 +62,7 @@ export default function NavBar() {
           <li className="dropdown-link-3">
             <a
               className="link"
-              href="#projects"
+              href="#projects-anchor"
               onClick={() => {
                 setDropDown(!dropDown);
               }}
@@ -74,7 +74,7 @@ export default function NavBar() {
             <a className="link" href="#about">
               <a
                 className="link"
-                href="#about"
+                href="#about-anchor"
                 onClick={() => {
                   setDropDown(!dropDown);
                 }}

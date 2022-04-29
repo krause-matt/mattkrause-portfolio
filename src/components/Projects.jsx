@@ -31,6 +31,9 @@ export default function Projects() {
 
   return (
     <div className="projects" id="projects">
+      <div className="anchor" id="projects-anchor">
+        projects-anchor
+      </div>
       <div className="container">
         <div className="selector">
           <div className="projects-med">Projects.</div>

@@ -2,6 +2,16 @@
 
 .projects {
   background-color: $platinum;
+  position: relative;
+
+  .anchor {
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-$navbar-height);
+    opacity: 0;
+  }
 
   .container {
     height: 100%;
