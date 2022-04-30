@@ -55,6 +55,9 @@ export default function Contact() {
 
   return (
     <div className="contact" id="contact">
+      <div className="anchor" id="contact-anchor">
+        contact-anchor
+      </div>
       <Modal modal={modal} setModal={setModal} />
       <div className="title">Contact.</div>
       <form ref={contactForm} className="contact-form" onSubmit={formSubmit}>

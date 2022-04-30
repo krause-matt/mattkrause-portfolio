@@ -33,7 +33,7 @@ export const garden = {
   ],
   detail:
     "I've always thought an app to keep track of garden and planting details from year-to-year would be useful, so I decided to build one using React and Redux. Several customizable garden features and components were purposely included to learn Redux state management. My main focus for this project was the front-end, so I took care of the REST API with a limited npm package. Implementing CRUD operations using this strategy was tricky. If I were to build the app today, I'd establish a proper database and allow photo uploads. I learned authentication/authorization using Google OAuth for this app.",
-  image: gardenPlotter[0],
+  image: gardenPlotter[1],
   app: "https://garden-plotter-react-redux.herokuapp.com/",
   code: "https://github.com/krause-matt/gardenplotter-react-redux",
 };
@@ -48,7 +48,7 @@ export const pizza = {
   ],
   detail:
     "I wanted to try creating an e-commerce site and get more experience with React code. The order customization portion of the app was a great learning process, as I had a combination of drop-downs, radio buttons, and checkboxes all contributing to state. I learned Google Firebase and Stripe to take care of the backend database and payment processes. I would like to try implementing Redux into this app or my next e-commerce project for more efficient state management between major components.",
-  image: pizzaPlace[0],
+  image: pizzaPlace[3],
   app: "https://the-pizzaplace.netlify.app/",
   code: "https://github.com/krause-matt/ecommerce-pizzaplace-react",
 };
@@ -95,7 +95,7 @@ export const skillDesc = {
     "I taught myself how to utilize Google Firebase when setting up an orders database for my React Pizza Store app. Check it out:",
   git: "I utilize Git for version control, documentation, and establishing remotes on all of my apps.",
   github:
-    "I've been contributing my code to GitHub almost daily since learning the basics in Oct. 2021.",
+    "I've been contributing my code to GitHub almost daily since learning the basics in Oct 2021.",
   html: "I am currently working to improve my use of proper semantics and learn more attributes.",
   javascript:
     "I have completed two JavaScript courses totaling over 40 hours, and have registered for an advanced topics course as well. JavaScript is used in all of my projects.",

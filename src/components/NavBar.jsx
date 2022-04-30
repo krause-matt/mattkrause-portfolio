@@ -31,7 +31,7 @@ export default function NavBar() {
             <a href="#about-anchor">Resume</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact-anchor">Contact</a>
           </li>
         </ul>
       </div>
@@ -86,7 +86,7 @@ export default function NavBar() {
           <li className="dropdown-link-5">
             <a
               className="link"
-              href="#contact"
+              href="#contact-anchor"
               onClick={() => {
                 setDropDown(!dropDown);
               }}

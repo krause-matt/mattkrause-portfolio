@@ -20,6 +20,7 @@ export const pizzaPlace = [
   "/project_images/pizza-place/menu.JPG",
   "/project_images/pizza-place/order.JPG",
   "/project_images/pizza-place/cart.JPG",
+  "/project_images/pizza-place/login.JPG",
 ];
 
 export const senateAPI = [
