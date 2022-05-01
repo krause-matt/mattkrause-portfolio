@@ -8,7 +8,7 @@ import {
 
 export const ballpark = {
   title: "Ballpark Rater",
-  subtitle: "A professional baseball field locating and rating app",
+  subtitle: "Professional baseball field locating and rating app",
   icons: [
     "devicon-bootstrap-plain",
     "devicon-express-original",
@@ -96,7 +96,7 @@ export const skillDesc = {
   git: "I utilize Git for version control, documentation, and establishing remotes on all of my apps.",
   github:
     "I've been contributing my code to GitHub almost daily since learning the basics in Oct 2021.",
-  html: "I am currently working to improve my use of proper semantics and learn more attributes.",
+  html: "Experienced using HTML essentials such as inputs, lists, forms, and tables. I am working on improving the readability of my code through utilization of semantics.",
   javascript:
     "I have completed two JavaScript courses totaling over 40 hours, and have registered for an advanced topics course as well. JavaScript is used in all of my projects.",
   mongodb:

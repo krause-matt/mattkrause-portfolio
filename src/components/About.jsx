@@ -48,26 +48,31 @@ export default function About() {
         <div className="right">
           <div className="aboutme">About Me.</div>
           <p className="about-description">
-            I'm an Electrical Engineer transitioning into Front-End Web
-            Development.
+            Short version: I'm an electrical engineer making a transition into
+            web development.
             <br></br>
             <br></br>
-            My introduction to web development came mid-2021 after researching
-            how to build a website. Along with learning the latest web
-            development languages and tools, I discovered that creating useful,
-            interactive apps simultaneously challenged my logical and creative
-            sides in an exciting way I hadn't experienced before. Since then, I
-            have been coding on a daily basis to enhance my web development
+            Long version: My introduction to web development came mid-2021 after
+            researching how to build a website. Along with learning the latest
+            development languages and tools, I discovered that constructing
+            useful, interactive apps simultaneously challenged my logical and
+            creative sides in an exciting way which I really enjoyed. Since
+            then, I've been coding almost daily to enhance my web development
             skills and portfolio of personal projects.
             <br></br>
             <br></br>I have spent my professional career solving problems for
             some of the world's largest brands including Samsung, Amazon, and
-            LG. My experience makes me an ideal candidate for a team in need of
-            a developer eager to learn and contribute.
+            LG. Fast-paced environments bring out my best and inspire me to
+            create innovative solutions. My experience makes me an ideal
+            candidate for a team in need of a developer eager to learn and
+            contribute.
             <br></br>
             <br></br>
             Thanks for visiting, and feel free to{" "}
-            <a href="#contact">contact me</a> if you would like to learn more!
+            <a href="#contact" className="about-link">
+              reach out
+            </a>{" "}
+            if you would like to learn more!
           </p>
         </div>
       </div>

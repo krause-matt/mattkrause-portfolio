@@ -255,6 +255,13 @@
         > a {
           color: inherit;
         }
+
+        .about-link {
+          &:hover {
+            color: white;
+            background-color: $charcoal;
+          }
+        }
       }
     }
   }

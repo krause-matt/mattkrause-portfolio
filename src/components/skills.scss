@@ -18,6 +18,7 @@
     left: 0;
     transform: translateY(-$navbar-height);
     opacity: 0;
+    overflow: hidden;
   }
 
     .icons {
@@ -234,6 +235,11 @@
           font-size: 1.8rem;
           line-height: 1.8rem;
           padding: 1rem;
+        }
+        @include screen-sixhundred {
+          font-size: 1.6rem;
+          line-height: 1.6rem;
+          padding: .5rem;
         }
       }
 
