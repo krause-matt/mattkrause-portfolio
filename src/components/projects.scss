@@ -38,10 +38,10 @@
 
         @include screen-medium {
           display: flex;
-          margin: 0 1rem;
-          font-size: 5rem;
+          margin: 2rem;
+          font-size: 4rem;
           font-weight: 600;
-          letter-spacing: -0.6rem;
+          letter-spacing: -0.4rem;
           color: $charcoal;
         }
 
@@ -280,7 +280,7 @@
           }
 
           @include screen-large {
-            font-size: 3.2rem;
+            font-size: 2.8rem;
           }
 
           @include screen-sixhundred {

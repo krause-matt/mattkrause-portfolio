@@ -30,28 +30,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 8rem;
+    font-size: 7rem;
     font-weight: 600;
     letter-spacing: -0.8rem;
     color: $charcoal;
     margin-bottom: 10rem;
 
+    @include screen-xlarge {
+      font-size: 6rem;
+    }
     @include screen-large {
-      margin-bottom: 0;
+      margin: 2rem;
       font-size: 5rem;
       letter-spacing: -0.6rem;
 
       // &:nth-of-type(3) {
       //   display: none;
       // }
-    }
+    }    
 
-    @include screen-xlarge {
-      font-size: 6rem;
-    }
-
-    @include screen-small {
+    @include screen-medium {
       font-size: 4rem;
+      letter-spacing: -0.4rem;
+      margin: 2rem;
     }
   }
 
