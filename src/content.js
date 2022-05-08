@@ -73,7 +73,7 @@ export const fit = {
   detail:
     "This project differs from the rest in that it is design-first rather than function-first. I had seen both CSS grid and Sass being used while watching developer tutorials on YouTube, and wanted to try them for myself. The speed at which you can design an app with Bootstrap is convenient, but I enjoyed learning how to utilize my creative chops a bit more with custom styling. I have taken my lesson on Sass forward to other work, including the portfolio site you're on right now!",
   image: fitTrain[0],
-  app: "https://fittrain-css-grid.herokuapp.com/",
+  app: "https://fit-train.netlify.app/",
   code: "https://github.com/krause-matt/css-grid-fittrain",
 };
 
