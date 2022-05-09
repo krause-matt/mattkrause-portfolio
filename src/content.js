@@ -95,7 +95,7 @@ export const skillDesc = {
     "I taught myself how to utilize Google Firebase when setting up an orders database for my React Pizza Store app. Check it out:",
   git: "I utilize Git for version control, documentation, and establishing remotes on all of my apps.",
   github:
-    "I've been contributing my code to GitHub almost daily since completing three online web development courses in Oct 2021.",
+    "I've been contributing my code to GitHub almost daily since completing three online web development courses last year.",
   html: "Experienced using HTML essentials such as inputs, lists, forms, and tables. I am working on improving the readability of my code through utilization of semantics.",
   javascript:
     "I have completed two JavaScript courses totaling over 40 hours, and have registered for an advanced topics course as well. JavaScript is used in all of my projects.",
