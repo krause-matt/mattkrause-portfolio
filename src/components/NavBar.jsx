@@ -28,7 +28,9 @@ export default function NavBar() {
             <a href="#projects-anchor">Projects</a>
           </li>
           <li>
-            <a href="#about-anchor">Resume</a>
+            <a href="https://bit.ly/3sr3yj0" target="_blank">
+              Resume
+            </a>
           </li>
           <li>
             <a href="#contact-anchor">Contact</a>
@@ -71,16 +73,15 @@ export default function NavBar() {
             </a>
           </li>
           <li className="dropdown-link-4">
-            <a className="link" href="#about">
-              <a
-                className="link"
-                href="#about-anchor"
-                onClick={() => {
-                  setDropDown(!dropDown);
-                }}
-              >
-                Resume
-              </a>
+            <a
+              className="link"
+              href="https://bit.ly/3sr3yj0"
+              target="_blank"
+              onClick={() => {
+                setDropDown(!dropDown);
+              }}
+            >
+              Resume
             </a>
           </li>
           <li className="dropdown-link-5">
